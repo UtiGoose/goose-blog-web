@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Nagoda';
+    src: url('font/Nagoda.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GenJyuuGothic';
+    src: url('font/GenJyuuGothic-Normal-2.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
