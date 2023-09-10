@@ -1,138 +1,17 @@
 <template>
     <div>
-        <div class="card">
-            <div class="img-box">
+        <div class="card" v-for="(item, index) in data" v-key="index">
+            <div class="img-box" v-if="index % 2 == 0">
                 <img class="image" src="../../static/image/bg1.jpg" alt="">
             </div>
             <div class="text-box">
-                <div class="title">2023/5/23面经</div>
-                <div class="info"><i class="iconfont icon-rili icon"></i>发表时间：2023-05-22 | <i
-                        class="iconfont icon-icon_category icon1"></i>休闲 > 游戏</div>
+                <div class="title">{{ item.title }}</div>
+                <div class="info">发表时间：{{ item.createTime }} | {{ item.classification }} > {{ item.tag }}</div>
                 <div class="label">
-                    游玩一遍后感触很深，游戏是分很多次游玩的，也导致前后剧情记忆不是很连贯，导致后面发刀子时不仅没有中刀，反而有点懵逼，后来仔细琢磨了一下，才发现作者对于剧情的巧妙设计，以及男女主在每个阶段做出的不同动作的深层原因，男主真名叫...
+                    {{ item.introduction }}
                 </div>
             </div>
-
-        </div>
-        <div class="card">
-
-            <div class="text-box">
-                <div class="title">2023/5/23面经</div>
-                <div class="info"><i class="iconfont icon-rili icon"></i>发表时间：2023-05-22 | <i
-                        class="iconfont icon-icon_category icon1"></i>休闲 > 游戏</div>
-                <div class="label">
-                    游玩一遍后感触很深，游戏是分很多次游玩的，也导致前后剧情记忆不是很连贯，导致后面发刀子时不仅没有中刀，反而有点懵逼，后来仔细琢磨了一下，才发现作者对于剧情的巧妙设计，以及男女主在每个阶段做出的不同动作的深层原因，男主真名叫...
-                </div>
-            </div>
-            <div class="img-box-r">
-                <img class="image" src="../../static/image/bg1.jpg" alt="">
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="img-box">
-                <img class="image" src="../../static/image/bg1.jpg" alt="">
-            </div>
-            <div class="text-box">
-                <div class="title">2023/5/23面经</div>
-                <div class="info">发表时间：2023-05-22 | 休闲 > 游戏</div>
-                <div class="label">
-                    游玩一遍后感触很深，游戏是分很多次游玩的，也导致前后剧情记忆不是很连贯，导致后面发刀子时不仅没有中刀，反而有点懵逼，后来仔细琢磨了一下，才发现作者对于剧情的巧妙设计，以及男女主在每个阶段做出的不同动作的深层原因，男主真名叫...
-                </div>
-            </div>
-
-        </div>
-        <div class="card">
-
-            <div class="text-box">
-                <div class="title">2023/5/23面经</div>
-                <div class="info">发表时间：2023-05-22 | 休闲 > 游戏</div>
-                <div class="label">
-                    游玩一遍后感触很深，游戏是分很多次游玩的，也导致前后剧情记忆不是很连贯，导致后面发刀子时不仅没有中刀，反而有点懵逼，后来仔细琢磨了一下，才发现作者对于剧情的巧妙设计，以及男女主在每个阶段做出的不同动作的深层原因，男主真名叫...
-                </div>
-            </div>
-            <div class="img-box-r">
-                <img class="image" src="../../static/image/bg1.jpg" alt="">
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="img-box">
-                <img class="image" src="../../static/image/bg1.jpg" alt="">
-            </div>
-            <div class="text-box">
-                <div class="title">2023/5/23面经</div>
-                <div class="info">发表时间：2023-05-22 | 休闲 > 游戏</div>
-                <div class="label">
-                    游玩一遍后感触很深，游戏是分很多次游玩的，也导致前后剧情记忆不是很连贯，导致后面发刀子时不仅没有中刀，反而有点懵逼，后来仔细琢磨了一下，才发现作者对于剧情的巧妙设计，以及男女主在每个阶段做出的不同动作的深层原因，男主真名叫...
-                </div>
-            </div>
-
-        </div>
-        <div class="card">
-
-            <div class="text-box">
-                <div class="title">2023/5/23面经</div>
-                <div class="info">发表时间：2023-05-22 | 休闲 > 游戏</div>
-                <div class="label">
-                    游玩一遍后感触很深，游戏是分很多次游玩的，也导致前后剧情记忆不是很连贯，导致后面发刀子时不仅没有中刀，反而有点懵逼，后来仔细琢磨了一下，才发现作者对于剧情的巧妙设计，以及男女主在每个阶段做出的不同动作的深层原因，男主真名叫...
-                </div>
-            </div>
-            <div class="img-box-r">
-                <img class="image" src="../../static/image/bg1.jpg" alt="">
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="img-box">
-                <img class="image" src="../../static/image/bg1.jpg" alt="">
-            </div>
-            <div class="text-box">
-                <div class="title">2023/5/23面经</div>
-                <div class="info">发表时间：2023-05-22 | 休闲 > 游戏</div>
-                <div class="label">
-                    游玩一遍后感触很深，游戏是分很多次游玩的，也导致前后剧情记忆不是很连贯，导致后面发刀子时不仅没有中刀，反而有点懵逼，后来仔细琢磨了一下，才发现作者对于剧情的巧妙设计，以及男女主在每个阶段做出的不同动作的深层原因，男主真名叫...
-                </div>
-            </div>
-
-        </div>
-        <div class="card">
-
-            <div class="text-box">
-                <div class="title">2023/5/23面经</div>
-                <div class="info">发表时间：2023-05-22 | 休闲 > 游戏</div>
-                <div class="label">
-                    游玩一遍后感触很深，游戏是分很多次游玩的，也导致前后剧情记忆不是很连贯，导致后面发刀子时不仅没有中刀，反而有点懵逼，后来仔细琢磨了一下，才发现作者对于剧情的巧妙设计，以及男女主在每个阶段做出的不同动作的深层原因，男主真名叫...
-                </div>
-            </div>
-            <div class="img-box-r">
-                <img class="image" src="../../static/image/bg1.jpg" alt="">
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="img-box">
-                <img class="image" src="../../static/image/bg1.jpg" alt="">
-            </div>
-            <div class="text-box">
-                <div class="title">2023/5/23面经</div>
-                <div class="info">发表时间：2023-05-22 | 休闲 > 游戏</div>
-                <div class="label">
-                    游玩一遍后感触很深，游戏是分很多次游玩的，也导致前后剧情记忆不是很连贯，导致后面发刀子时不仅没有中刀，反而有点懵逼，后来仔细琢磨了一下，才发现作者对于剧情的巧妙设计，以及男女主在每个阶段做出的不同动作的深层原因，男主真名叫...
-                </div>
-            </div>
-
-        </div>
-        <div class="card">
-
-            <div class="text-box">
-                <div class="title">2023/5/23面经</div>
-                <div class="info">发表时间：2023-05-22 | 休闲 > 游戏</div>
-                <div class="label">
-                    游玩一遍后感触很深，游戏是分很多次游玩的，也导致前后剧情记忆不是很连贯，导致后面发刀子时不仅没有中刀，反而有点懵逼，后来仔细琢磨了一下，才发现作者对于剧情的巧妙设计，以及男女主在每个阶段做出的不同动作的深层原因，男主真名叫...
-                </div>
-            </div>
-            <div class="img-box-r">
+            <div class="img-box-r" v-if="index % 2 == 1">
                 <img class="image" src="../../static/image/bg1.jpg" alt="">
             </div>
         </div>
@@ -148,7 +27,41 @@
 </template>
 
 <script setup lang="ts">
+import { getPage } from '../../api/blog'
+import { ref, onMounted } from 'vue'
+import Message from '../../util/Message'
 
+
+let page = ref({
+    current: 1,
+    size: 10,
+    total: 0
+})
+
+// 列表
+let data = ref([{
+    title: ''
+}])
+
+function _getPage() {
+    const params = {
+        current: page.value.current - 1,
+        size: page.value.size
+    }
+    getPage(params).then(res => {
+        if (res.code != 20007) {
+            Message({ type: 'error', text: '获取数据失败' })
+            return
+        }
+
+        console.log(res)
+        data.value = res.data.records
+    })
+}
+
+onMounted(() => {
+    _getPage()
+})
 </script>
 
 <style lang="scss" scoped>

@@ -113,98 +113,60 @@
                     <div class="project">
                         <div class="item item-main">
                             <header class="item-hd">
-                                <span class="item-time">2019.04 ~ 至今</span>
+                                <span class="item-time">2022.08 ~ 2022.12</span>
                                 <a class="btn item-more" href="javascript:void(0);" target="_blank" title="工作">
-                                    在职
+                                    实习
                                 </a>
-                                <div class="item-name">新加坡银行有限公司</div>
+                                <div class="item-com-name">江苏相数科技有限公司</div>
                             </header>
                         </div>
                         <div class="item">
                             <header class="item-hd">
                                 <div class="item-name">
                                     <i class="iconfont icon-dian icon"></i>
-                                    新加坡银行便捷金融应用项目
+                                    南通市领导驾驶舱
                                 </div>
                                 <div class="item-more">
-                                    <strong>项目负责人</strong>
+                                    <strong>运维</strong>
                                 </div>
                             </header>
                             <div class="item-bd">
                                 <p class="section-content">
-                                    负责新加坡银行公司的便捷金融应用的开发。在项目中，负责应用程序结构设计和开发，并协调其他技术团队保证项目的上线和部署。致力于平衡时间和资源的管理，构建一个高性能、符合金融安全要求的系统。
+                                    <span
+                                        class="item-title">项目介绍：</span>该系统是为江苏省南通市高层领导提供的“一站式”决策支持的管理信息中心系统。其信息包括市民矛盾纠纷、交通车辆情况、道路监控、土地情况等领域，做到在一张图内显示大量信息。
                                 </p>
                                 <p class="section-content">
-                                    设计和开发新加坡银行的便捷金融应用，维护和优化现有应用；实现前端应用平台的架构设计和开发；协作并与其他技术团队协调，争取较快的上线和部署；坚持对前端设计模式并不断推动前端开发流程的规格化。
+                                    <span
+                                        class="item-title">负责工作：</span>负责南通领导驾驶舱平台的日常运行与维护。工作内容包括记录用户使用平台过程中遇到或测试出的bug，通过云平台，navicat等工具分析bug原因，并反馈给开发人员；协作并与其他技术团队协调，完成多次版本更新与迭代，争取产品的快速上线与部署。
                                 </p>
                                 <p class="section-content">
-                                    应用成功上线，并获得了广大用户的好评和反馈；应用覆盖了新加坡和东南亚地区，获得了高额利润并推动公司业绩增长。
+                                    <span
+                                        class="item-title">主要收获：</span>初次实习，学习到了公司软件开发的整体流程，并且熟练了运维岗的主要工作；在多次和同事，其他公司人员的协商后，我的沟通能力得到了提升。
                                 </p>
                             </div>
                         </div>
-                    </div>
-                    <div class="project">
-                        <div class="item item-main">
-                            <header class="item-hd">
-                                <span class="item-time">2019.04 ~ 至今</span>
-                                <a class="btn item-more" href="javascript:void(0);" target="_blank" title="工作">
-                                    在职
-                                </a>
-                                <div class="item-name">新加坡银行有限公司</div>
-                            </header>
-                        </div>
                         <div class="item">
                             <header class="item-hd">
                                 <div class="item-name">
                                     <i class="iconfont icon-dian icon"></i>
-                                    新加坡银行便捷金融应用项目
+                                    宿迁市领导驾驶舱
                                 </div>
                                 <div class="item-more">
-                                    <strong>项目负责人</strong>
+                                    <strong>后端开发</strong>
                                 </div>
                             </header>
                             <div class="item-bd">
                                 <p class="section-content">
-                                    负责新加坡银行公司的便捷金融应用的开发。在项目中，负责应用程序结构设计和开发，并协调其他技术团队保证项目的上线和部署。致力于平衡时间和资源的管理，构建一个高性能、符合金融安全要求的系统。
+                                    <span
+                                        class="item-title">项目介绍：</span>该系统是为江苏省南通市宿迁市高层领导提供的“一站式”决策支持的管理信息中心系统。其信息包括市民矛盾纠纷、交通车辆情况、道路监控、土地情况等领域，做到在一张图内显示大量信息。
                                 </p>
                                 <p class="section-content">
-                                    设计和开发新加坡银行的便捷金融应用，维护和优化现有应用；实现前端应用平台的架构设计和开发；协作并与其他技术团队协调，争取较快的上线和部署；坚持对前端设计模式并不断推动前端开发流程的规格化。
+                                    <span
+                                        class="item-title">负责工作：</span>负责宿迁市领导驾驶舱Java后端开发。工作内容包括大量MySQL查询语句的编写与优化；与天气站等机构对接接口，封装接口并接入平台；随着版本迭代，操作Linux服务器部署服务端。
                                 </p>
                                 <p class="section-content">
-                                    应用成功上线，并获得了广大用户的好评和反馈；应用覆盖了新加坡和东南亚地区，获得了高额利润并推动公司业绩增长。
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <div class="item item-main">
-                            <header class="item-hd">
-                                <span class="item-time">2019.04 ~ 至今</span>
-                                <a class="btn item-more" href="javascript:void(0);" target="_blank" title="工作">
-                                    在职
-                                </a>
-                                <div class="item-name">新加坡银行有限公司</div>
-                            </header>
-                        </div>
-                        <div class="item">
-                            <header class="item-hd">
-                                <div class="item-name">
-                                    <i class="iconfont icon-dian icon"></i>
-                                    新加坡银行便捷金融应用项目
-                                </div>
-                                <div class="item-more">
-                                    <strong>项目负责人</strong>
-                                </div>
-                            </header>
-                            <div class="item-bd">
-                                <p class="section-content">
-                                    负责新加坡银行公司的便捷金融应用的开发。在项目中，负责应用程序结构设计和开发，并协调其他技术团队保证项目的上线和部署。致力于平衡时间和资源的管理，构建一个高性能、符合金融安全要求的系统。
-                                </p>
-                                <p class="section-content">
-                                    设计和开发新加坡银行的便捷金融应用，维护和优化现有应用；实现前端应用平台的架构设计和开发；协作并与其他技术团队协调，争取较快的上线和部署；坚持对前端设计模式并不断推动前端开发流程的规格化。
-                                </p>
-                                <p class="section-content">
-                                    应用成功上线，并获得了广大用户的好评和反馈；应用覆盖了新加坡和东南亚地区，获得了高额利润并推动公司业绩增长。
+                                    <span
+                                        class="item-title">主要收获：</span>通过SQL编写，解决大量复杂场景下的数据获取；与前端人员对接，完成页面数据的呈现；为解决页面上数据提取缓慢，云平台卡顿的问题，在旧SQL语句上进行修改，解决部分问题后，加载速度得到明显提升。
                                 </p>
                             </div>
                         </div>
@@ -219,33 +181,93 @@
                 </header>
                 <div class="item item-main">
                     <header class="item-hd">
-                        <span class="item-time">2019.04 ~ 至今</span>
+                        <span class="item-time">2022.04 ~ 2022.12</span>
 
-                        <div class="item-name">新加坡银行有限公司</div>
+                        <div class="item-name">南通大学619项目组</div>
                     </header>
                 </div>
                 <div class="item">
                     <header class="item-hd">
                         <div class="item-name">
                             <i class="iconfont icon-dian icon"></i>
-                            新加坡银行便捷金融应用项目
+                            南通旺而盛纺织有限公司商城系统
                         </div>
                         <div class="item-more">
-                            <strong>项目负责人</strong>
+                            <strong>全栈开发</strong>
                         </div>
                     </header>
                     <div class="item-bd">
                         <p class="section-content">
-                            负责新加坡银行公司的便捷金融应用的开发。在项目中，负责应用程序结构设计和开发，并协调其他技术团队保证项目的上线和部署。致力于平衡时间和资源的管理，构建一个高性能、符合金融安全要求的系统。
+                            <span
+                                class="item-title">项目介绍：</span>该系统时为国外用户提供的在线商城平台，售卖物为纺织品或成品衣物。网站为用户提供极佳的服务：一对一客服，个性化定制商城，引入Style3D以浏览纺织品的全貌；同时搭建一个后台管理系统，方便工作人员实时修改纺织品信息，展示图，用户权限等等。
                         </p>
                         <p class="section-content">
-                            设计和开发新加坡银行的便捷金融应用，维护和优化现有应用；实现前端应用平台的架构设计和开发；协作并与其他技术团队协调，争取较快的上线和部署；坚持对前端设计模式并不断推动前端开发流程的规格化。
+                            <span
+                                class="item-title">负责工作：</span>负责南通旺而盛纺织有限公司商城系统用户端与管理端的开发。根据新的需求来管理或修改数据库表，新建或修改接口，并不断优化UI，提高交互效果。
                         </p>
                         <p class="section-content">
-                            应用成功上线，并获得了广大用户的好评和反馈；应用覆盖了新加坡和东南亚地区，获得了高额利润并推动公司业绩增长。
+                            <span
+                                class="item-title">主要收获：</span>新功能的代码提交均通过测试。网站的数据量较大，我通过MySQL创建外键，SQL语句优化，JS处理优化等等途径，提高了网页的加载与访问速度。在不到一年的时间内，我有大量的push次数，将一个网站雏形打磨成一个即将上线的产品。
                         </p>
                     </div>
                 </div>
+                <div class="item">
+                    <header class="item-hd">
+                        <div class="item-name">
+                            <i class="iconfont icon-dian icon"></i>
+                            泾县砂石管理系统
+                        </div>
+                        <div class="item-more">
+                            <strong>小程序开发</strong>
+                        </div>
+                    </header>
+                    <div class="item-bd">
+                        <p class="section-content">
+                            <span
+                                class="item-title">项目介绍：</span>本项目将对砂石开采、运输、加工、销售等环节进行全方位监控,实现全流程的信息化、无人化、智能化操作,并提供监控、告警、数据统计与分析、财务统计等功能,从而杜绝砂石盗采、舞弊等情况,提高综合管理效率。
+                        </p>
+                        <p class="section-content">
+                            <span
+                                class="item-title">负责工作：</span>组件化开发小程序UI，提高复用率，降低代码量；开发采砂场工作人员小程序端，挖掘机司机小程序端，原料运输司机小程序端，购买方负责人小程序端，提货司机小程序端，铲车司机小程序端的所有功能。
+                        </p>
+                        <p class="section-content">
+                            <span class="item-title">主要收获：</span>在截止日期前成功完成项目，并成功通过联调。该项目让我的团队合作能力有显著提升。
+                        </p>
+                    </div>
+                </div>
+                <div class="item item-main">
+                    <header class="item-hd">
+                        <span class="item-time">2022.12 ~ 2023.04</span>
+
+                        <div class="item-name">计算机设计大赛</div>
+                    </header>
+                </div>
+                <div class="item">
+                    <header class="item-hd">
+                        <div class="item-name">
+                            <i class="iconfont icon-dian icon"></i>
+                            量子算法可视化平台
+                        </div>
+                        <div class="item-more">
+                            <strong>全栈开发</strong>
+                        </div>
+                    </header>
+                    <div class="item-bd">
+                        <p class="section-content">
+                            <span
+                                class="item-title">项目介绍：</span>该平台提供图染色算法的传统解决方法步骤与量子算法的差异，并提供一个demo供用户测试。网站的目的是供用户学习与交流量子算法，抛砖引玉，出现更多的量子算法解决传统数学问题的案例。
+                        </p>
+                        <p class="section-content">
+                            <span
+                                class="item-title">负责工作：</span>负责量子算法可视化平台的前后端搭建，在用户测试demo时，后端通过Jython调用Python文件，并生成图片，将图片地址返回前端。
+                        </p>
+                        <p class="section-content">
+                            <span
+                                class="item-title">主要收获：</span>该项目的难点在于理解量子算法的原理，实现步骤，和qiskit的使用。在查阅相关文档后，成功使用qiskit创建程序，并完成前后端项目。
+                        </p>
+                    </div>
+                </div>
+                
             </section>
 
             <section id="academic">
@@ -258,30 +280,152 @@
                     <header class="item-hd">
                         <span class="item-time">2019.04 ~ 至今</span>
 
-                        <div class="item-name">新加坡银行有限公司</div>
+                        <div class="item-name-zx">团体程序设计天梯赛</div>
                     </header>
                 </div>
                 <div class="item">
                     <header class="item-hd">
-                        <div class="item-name">
+                        <div class="item-name jump">
                             <i class="iconfont icon-dian icon"></i>
-                            新加坡银行便捷金融应用项目
+                            江苏省团队二等奖 全国成功参与奖
                         </div>
                         <div class="item-more">
                             <strong>项目负责人</strong>
                         </div>
                     </header>
-                    <div class="item-bd">
-                        <p class="section-content">
-                            负责新加坡银行公司的便捷金融应用的开发。在项目中，负责应用程序结构设计和开发，并协调其他技术团队保证项目的上线和部署。致力于平衡时间和资源的管理，构建一个高性能、符合金融安全要求的系统。
-                        </p>
-                        <p class="section-content">
-                            设计和开发新加坡银行的便捷金融应用，维护和优化现有应用；实现前端应用平台的架构设计和开发；协作并与其他技术团队协调，争取较快的上线和部署；坚持对前端设计模式并不断推动前端开发流程的规格化。
-                        </p>
-                        <p class="section-content">
-                            应用成功上线，并获得了广大用户的好评和反馈；应用覆盖了新加坡和东南亚地区，获得了高额利润并推动公司业绩增长。
-                        </p>
-                    </div>
+                </div>
+                <div class="item item-main">
+                    <header class="item-hd">
+                        <span class="item-time">2019.04 ~ 至今</span>
+
+                        <div class="item-name-zx">互联网+ 红旅赛道 小绿书</div>
+                    </header>
+                </div>
+                <div class="item">
+                    <header class="item-hd">
+                        <div class="item-name jump">
+                            <i class="iconfont icon-dian icon"></i>
+                            南通大学校级三等奖
+                        </div>
+                        <div class="item-more">
+                            <strong>项目负责人</strong>
+                        </div>
+                    </header>
+                </div>
+                <div class="item item-main">
+                    <header class="item-hd">
+                        <span class="item-time">2019.04 ~ 至今</span>
+
+                        <div class="item-name-zx">专利申请</div>
+                    </header>
+                </div>
+                <div class="item">
+                    <header class="item-hd">
+                        <div class="item-name jump">
+                            <i class="iconfont icon-dian icon"></i>
+                            一种基于轮胎压力监测触发的轮胎自密封应急系统
+                        </div>
+                        <div class="item-more">
+                            <strong>项目负责人</strong>
+                        </div>
+                    </header>
+                </div>
+                <div class="item item-main">
+                    <header class="item-hd">
+                        <span class="item-time">2019.04 ~ 至今</span>
+
+                        <div class="item-name-zx">论文发表</div>
+                    </header>
+                </div>
+                <div class="item">
+                    <header class="item-hd">
+                        <div class="item-name jump">
+                            <i class="iconfont icon-dian icon"></i>
+                            基于网络物理融合深度学习的网络通信信息安全保障
+                        </div>
+                        <div class="item-more">
+                            <strong>项目负责人</strong>
+                        </div>
+                    </header>
+                </div>
+            </section>
+
+            <section id="academic">
+                <header class="section-hd">
+                    <span class="section-title-l"></span>
+                    <h2 class="section-title">开源项目</h2>
+                    <span class="section-title-r"></span>
+                </header>
+                <div class="item item-main">
+                    <header class="item-hd">
+                        <div class="item-name-zx">鹅窝 Blog</div>
+                    </header>
+                </div>
+                <div class="item">
+                    <header class="item-hd">
+                        <div class="item-name jump">
+                            <i class="iconfont icon-dian icon"></i>
+                            使用Vue3和SpringBoot做的博客系统，记录了我的项目与心得。
+                        </div>
+                        <div class="item-more">
+                            <a class="line" href="">开源链接</a>
+                        </div>
+                    </header>
+                </div>
+                
+                <div class="item item-main">
+                    <header class="item-hd">
+                        <div class="item-name-zx">口袋聊天室 安卓APP</div>
+                    </header>
+                </div>
+                <div class="item">
+                    <header class="item-hd">
+                        <div class="item-name jump">
+                            <i class="iconfont icon-dian icon"></i>
+                            学习Android时做的APP，后端为SpringBoot，宝可梦主题聊天室。
+                        </div>
+                        <div class="item-more">
+                            <a class="line" href="">开源链接</a>
+                        </div>
+                    </header>
+                </div>
+
+                <div class="item item-main">
+                    <header class="item-hd">
+                        <div class="item-name-zx">Goose XP Web</div>
+                    </header>
+                </div>
+                <div class="item">
+                    <header class="item-hd">
+                        <div class="item-name jump">
+                            <i class="iconfont icon-dian icon"></i>
+                            使用Vue2和SpringBoot，模拟操作系统与相关案例。
+                        </div>
+                        <div class="item-more">
+                            <a class="line" href="">开源链接</a>
+                        </div>
+                    </header>
+                </div>
+
+                <div class="item item-main">
+                    <header class="item-hd">
+                        <div class="item-name-zx">轻简校园 小程序</div>
+                    </header>
+                </div>
+                <div class="item">
+                    <header class="item-hd">
+                        <div class="item-name jump">
+                            <i class="iconfont icon-dian icon"></i>
+                            学习小程序时做的一个校园交易/交友小程序。
+                        </div>
+                        <div class="item-more">
+                            <a class="line" href="">开源链接</a>
+                        </div>
+                    </header>
+                </div>
+
+                <div class="upd-time">
+                    更新时间：2023年5月
                 </div>
             </section>
         </div>
@@ -297,7 +441,9 @@
 .icon {
     color: #3498db;
 }
-
+.jump {
+    cursor: pointer;
+}
 .card:hover {
     transition: all 0.8s ease 0s;
     box-shadow: 0 0 18px #868484;
@@ -671,6 +817,7 @@ a {
     .project {
         margin-bottom: 20px;
     }
+
     .section-title-l,
     .section-title-r {
         flex: 1;
@@ -705,8 +852,17 @@ a {
                 .icon {
                     color: #3498db;
                 }
+
+
             }
+
+
         }
+    }
+
+    .item-title {
+
+        font-weight: 800;
     }
 
     .item {
@@ -737,6 +893,7 @@ a {
                 .item-time,
                 .item-more {
                     font-size: 14px;
+
                 }
             }
         }
@@ -783,6 +940,12 @@ a {
             float: right;
             margin-left: 8px;
 
+            a {
+                color: #000;
+            }
+            a:hover {
+                background-color: #f2f2f2;
+            }
             &:not(.btn) {
                 height: 24px;
                 line-height: 24px;
@@ -803,10 +966,23 @@ a {
             }
         }
 
+        .item-com-name {
+            float: left;
+            display: inline;
+            font-weight: 400;
+        }
+
         .item-name {
             float: left;
             display: inline;
             font-weight: 600;
+            color: #3498db;
+        }
+        .item-name-zx {
+            float: left;
+            display: inline;
+            font-weight: 600;
+            color: #000;
         }
     }
 
@@ -999,5 +1175,11 @@ footer {
 
 ::selection {
     background: #d1d1d1;
+}
+.upd-time {
+    color: #c5c0c0;
+    float: right;
+    margin-top: 40px;
+    font-size: 16px;
 }
 </style>
