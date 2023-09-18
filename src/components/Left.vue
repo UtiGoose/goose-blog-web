@@ -4,7 +4,7 @@
             <div class="card">
                 <div class="ava">
                     <div class="avatar-box">
-                        <img class="avatar" src="http://1.15.138.41:8080/static/image/user.png" alt="">
+                        <img class="avatar" src="../static/image/ava.jpg" alt="">
                     </div>
                 </div>
                 <div class="nickname">utigoose</div>
@@ -12,19 +12,22 @@
                 <div class="article-info">
                     <div class="item">
                         <div class="title">category</div>
-                        <div class="count">15</div>
+                        <div class="count">{{ userData.categoryNum }}</div>
                     </div>
                     <div class="item">
                         <div class="title">article</div>
-                        <div class="count">15</div>
+                        <div class="count">{{ userData.articleNum }}</div>
                     </div>
                     <div class="item">
                         <div class="title">notes</div>
-                        <div class="count">15</div>
+                        <div class="count">{{ userData.noteNum }}</div>
                     </div>
                 </div>
 
-                <button class="btn"> <i class="iconfont icon-github-fill"></i> Follow me</button>
+                <a href="https://gitee.com/lin-geese" target="_blank">
+                    <button class="btn"> <i class="iconfont icon-github-fill"></i> Follow me</button>
+                </a>
+
                 <div class="time">Last updated: 2023-05-21 10:30:01</div>
             </div>
             <div class="card">
@@ -32,36 +35,19 @@
                     <div class="text"><i style="color: orange;" class="iconfont icon-icon_category"></i> category</div>
                     <i class="iconfont icon-xiangyou1"></i>
                 </div>
-                <div class="category-f">
-                    <i class="iconfont icon-dian dian"></i>
-                    <div class="text">study</div>
-                    <div class="count">15</div>
-                </div>
-                <div class="category-s">
-                    <i class="iconfont icon-dian dian"></i>
-                    <div class="text">vue</div>
-                    <div class="count">3</div>
-                </div>
-                <div class="category-s">
-                    <i class="iconfont icon-dian dian"></i>
-                    <div class="text">js</div>
-                    <div class="count">9</div>
-                </div>
 
-                <div class="category-f">
-                    <i class="iconfont icon-dian dian"></i>
-                    <div class="text">study</div>
-                    <div class="count">15</div>
-                </div>
-                <div class="category-s">
-                    <i class="iconfont icon-dian dian"></i>
-                    <div class="text">vue</div>
-                    <div class="count">3</div>
-                </div>
-                <div class="category-s">
-                    <i class="iconfont icon-dian dian"></i>
-                    <div class="text">js</div>
-                    <div class="count">9</div>
+                <div v-for="(classificationItem, classificationIndex) in classificationData" v-key="classificationIndex">
+                    <div class="category-f">
+                        <i class="iconfont icon-dian dian"></i>
+                        <div class="text">{{ classificationItem.name }}</div>
+                        <div class="count">{{ classificationItem.num }}</div>
+                    </div>
+
+                    <div class="category-s" v-for="(tagItem, tagIndex) in classificationItem.tagList" v-key="tagIndex">
+                        <i class="iconfont icon-dian dian"></i>
+                        <div class="text">{{ tagItem.name }}</div>
+                        <div class="count">{{ tagItem.num }}</div>
+                    </div>
                 </div>
             </div>
 
@@ -72,6 +58,8 @@
 
 <script setup lang="ts">
 import { onBeforeMount, onMounted, ref, onUnmounted, defineComponent } from 'vue'
+import { getClassificationList, getUserInfo } from '../api/blog'
+import Message from '../util/Message'
 
 defineComponent({
     name: 'Left'
@@ -79,6 +67,40 @@ defineComponent({
 let isFixed = ref(false)
 let fixedLeft = ref()
 let fixedLeftNum = ref(0)
+let classificationData = ref([{
+    name: '',
+    num: '',
+    tagList: [{
+        name: '',
+        num: ''
+    }]
+}])
+let userData = ref({
+    categoryNum: 0,
+    articleNum: 0,
+    noteNum: 0
+})
+
+
+function _getUserInfo() {
+    getUserInfo().then(res => {
+        if (res.code != 20007) {
+            Message({ type: 'error', text: '获取数据失败' })
+            return
+        }
+        userData.value = res.data
+    })
+}
+function _getClassificationList() {
+    getClassificationList().then(res => {
+        if (res.code != 20007) {
+            Message({ type: 'error', text: '获取数据失败' })
+            return
+        }
+        classificationData.value = res.data
+    })
+}
+
 onBeforeMount(() => {
     window.addEventListener("beforeunload", () => {
         window.scroll(0, 0);
@@ -88,6 +110,8 @@ onBeforeMount(() => {
     });
 })
 onMounted(() => {
+    _getClassificationList()
+    _getUserInfo()
     window.addEventListener('scroll', handleScroll)
     fixedLeftNum.value = fixedLeft.value.getBoundingClientRect().top - 120
 })

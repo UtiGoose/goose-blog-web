@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 //注册路由
 const routes = [
     {
-        path: '/list',
+        path: '/',
         name: 'list',
         component: () => import('../views/blog/List.vue'),
     }, {
@@ -18,11 +18,14 @@ const routes = [
         path: '/message',
         name: 'message',
         component: () => import('../views/message/Message.vue'),
-    }
-    , {
+    }, {
         path: '/mine',
         name: 'mine',
         component: () => import('../views/mine/Mine.vue'),
+    }, {
+        path: '/article',
+        name: 'article',
+        component: () => import('../views/blog/Article.vue'),
     }
 ];
 const router = createRouter({

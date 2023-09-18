@@ -8,11 +8,11 @@
             <img src="../static/image/icon-s.png" class="icon" alt="">
             <div class="nav">
                 <ul>
-                    <li><a href="/list"><i class="iconfont icon-shouye"></i> 首页</a></li>
+                    <li><a href="/"><i class="iconfont icon-shouye"></i> 首页</a></li>
                     <li><a href="/timeline"><i class="iconfont icon-timeline-fill"></i> 时间轴</a></li>
                     <li><a href="/note"><i class="iconfont icon-shouye"></i> 便签</a></li>
                     <li><a href="/message"><i class="iconfont icon-icon_category"></i> 留言</a></li>
-                    <li><a href="#"><i class="iconfont icon-shouye"></i> 友链</a></li>
+                    <li><a href="/"><i class="iconfont icon-shouye"></i> 友链</a></li>
                     <li><a href="/mine"><i class="iconfont icon-shouye"></i> 关于我</a></li>
                     <div class="nav-box"></div>
                 </ul>

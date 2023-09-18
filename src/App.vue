@@ -1,7 +1,7 @@
 
 <template>
   <div id="app">
-    <Banner></Banner>
+    <Banner ></Banner>
     <div class="main-box">
       <div class="bgPulse">
         <span></span>
@@ -30,8 +30,6 @@
 import Footer from './components/Footer.vue'
 import Banner from './components/Banner.vue'
 import Left from './components/Left.vue'
-
-
 
 
 </script>
@@ -133,4 +131,5 @@ import Left from './components/Left.vue'
   }
 
 
-}</style>
+}
+</style>

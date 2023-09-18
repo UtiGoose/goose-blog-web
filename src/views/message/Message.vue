@@ -7,53 +7,82 @@
 
                 <div class="comment-block">
                     <form action="">
-                        <textarea name="" id="" cols="30" rows="3" placeholder="Say somthing..."></textarea>
+                        
+                        <textarea style="resize: vertical" name="" id="" cols="30" rows="4" placeholder="Say somthing..."></textarea>
+                
+                        
                     </form>
+                    <button class="sub-btn">submit</button>
                 </div>
             </div>
 
-            <div class="comment-wrap">
+
+            <div class="comment-wrap" v-for="(item, index) in messageData" v-key="index">
                 <div class="photo">
                     <div class="avatar" style="background-image: url('http://1.15.138.41:8080/static/image/user.png')"></div>
                 </div>
                 <div class="comment-block">
-                    <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto temporibus iste
-                        nostrum dolorem natus recusandae incidunt voluptatum. Eligendi voluptatum ducimus architecto
-                        tempore, quaerat explicabo veniam fuga corporis totam reprehenderit
-                        quasi sapiente modi tempora at perspiciatis mollitia, dolores voluptate. Cumque, corrupti?</p>
+                    <p class="comment-text">{{ item.article }}</p>
                     <div class="bottom-comment">
-                        <div class="comment-date">23.5 2014</div>
+                        <div class="comment-date">{{ DateFormatPipe(item.createTime, 'yyyy-MM-dd HH:mm:ss') }}</div>
                         <ul class="comment-actions">
-                            <li class="complain">Complain</li>
-                            <li class="reply">Reply</li>
+                            <li class="reply">属地：{{ item.city }}</li>
                         </ul>
                     </div>
                 </div>
             </div>
-
-            <div class="comment-wrap">
-                <div class="photo">
-                    <div class="avatar" style="background-image: url('http://1.15.138.41:8080/static/image/user.png')"></div>
-                </div>
-                <div class="comment-block">
-                    <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto temporibus iste
-                        nostrum dolorem natus recusandae incidunt voluptatum. Eligendi voluptatum ducimus architecto
-                        tempore, quaerat explicabo veniam fuga corporis totam.</p>
-                    <div class="bottom-comment">
-                        <div class="comment-date">22.2 2014</div>
-                        <ul class="comment-actions">
-                            <li class="complain">Complain</li>
-                            <li class="reply">Reply</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
+    <div class="page-box">
+            <div class="page"><i class="iconfont icon-xiangzuo1"></i></div>
+            <div class="page" v-show="page.current != 2" @click="_getPage()">{{ page.current - 2 }}</div>
+            <div class="current">{{ page.current - 1 }}</div>
+            <div class="page" v-show="page.totalPage >= page.current + 1" @click="_getPage(page.current)">{{ page.current + 1 }}</div>
+            <div class="page"><i class="iconfont icon-xiangyou1"></i></div>
+        </div>
 </template>
 
 <script setup lang="ts">
+import { getUserIp, getPage } from '../../api/message'
+import { onMounted, ref } from 'vue'
+import Message from '../../util/Message'
+import DateFormatPipe from '../../util/DateFormat'
 
+let messageData = ref([])
+let userIp = ref('')
+let page = ref({
+    current: 1,
+    size: 20,
+    total: 0,
+    totalPage: 0
+})
+
+function _getUserIp() {
+    getUserIp().then(res => {
+        console.log(res)
+        userIp = res.message
+    })
+}
+
+function _getPage() {
+    getPage(page.value).then(res => {
+        console.log(res)
+        if (res.code != 20007) {
+            Message({ type: 'error', text: '获取数据失败' })
+            return
+        }
+        messageData.value = res.data.records
+        page.value.total = res.data.total
+        page.value.current = res.data.current + 1
+        page.value.totalPage = Math.ceil(page.value.total / 120)
+    })
+}
+
+onMounted(() => {
+    _getUserIp()
+    _getPage()
+})
 </script>
 
 <style scoped>
@@ -152,6 +181,21 @@ p {
     vertical-align: top;
     border-radius: 0.1875rem;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+
+    .sub-btn {
+        float: center;
+        background: #3498db;
+        color: #fff;
+        border: none;
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .sub-btn:hover {
+        background: #0b629c;
+    }
 }
 
 .comment-block textarea {
@@ -187,4 +231,34 @@ p {
 
 .comment-actions li.reply {
     padding-left: 0.625rem;
-}</style>
+}
+
+.page-box {
+    display: flex;
+    width: 200px;
+    margin: 0 auto;
+
+    .page {
+        height: 25px;
+        width: 25px;
+        color: #3498db;
+        line-height: 25px;
+        text-align: center;
+        margin-left: 5px;
+        cursor: pointer;
+
+    }
+
+    .current {
+        height: 25px;
+        width: 25px;
+        color: #fff;
+        background-color: #3498db;
+        line-height: 25px;
+        text-align: center;
+        margin-left: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+</style>
