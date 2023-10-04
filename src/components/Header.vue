@@ -65,7 +65,6 @@ const scrollTop = () => {
 </script>
 
 <style lang="scss" scoped>
-
 .head-enter-from,
 .head-leave-to {
     opacity: 0;
@@ -204,4 +203,5 @@ const scrollTop = () => {
     box-shadow: 1px 1px 1px 1px #d3d1d1;
 
     z-index: 9;
-}</style>
+}
+</style>

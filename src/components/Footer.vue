@@ -54,7 +54,7 @@ defineComponent({
     .footer-box {
 
         line-height: 20px;
-        margin-left: 22%;
+        margin-left: 18%;
         padding-top: 10px;
 
         .icon {
@@ -62,6 +62,7 @@ defineComponent({
         }
 
         .text {
+            width: 100%;
             display: flex;
             font-size: 10px;
             color: #fff;
@@ -70,7 +71,7 @@ defineComponent({
 
     .connection {
         position: absolute;
-        right: 22%;
+        right: 18%;
 
         .btn-group-title {
             margin: 10px 10px 0 10px;

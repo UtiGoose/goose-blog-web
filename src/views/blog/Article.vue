@@ -1,13 +1,10 @@
 <template>
-    <div class="card">
 
+    <div class="card" v-loading="loading">
         <img class="img" :src="'http://1.15.138.41:8080/static/image/gooseBlog/' + data.image"
             onerror="src=`http://1.15.138.41:8080/static/image/gooseBlog/404.jpg`" alt="">
         <div class="divd">展示图</div>
-
-        <div class="article" v-html="data.article" v-highlight></div>
-
-
+        <div id="block" class="article" v-html="data.article"></div>
     </div>
 </template>
 
@@ -16,6 +13,10 @@ import { marked } from 'marked'
 import { getById } from '../../api/blog'
 import { useRouter } from 'vue-router'
 import { onMounted, ref } from 'vue'
+import hljs from "highlight.js"; // 引入 highlight.js
+import 'highlight.js/styles/foundation.css'
+
+
 
 let data = ref({})
 
@@ -27,8 +28,17 @@ function _getById() {
     getById({ id: router.currentRoute.value.query.id }).then(res => {
         console.log(res)
         data.value = res.data
+
+
+
         data.value.article = marked(data.value.article)
 
+    }).then(() => {
+        const el = document.getElementById('block')
+        let blocks = el!.querySelectorAll("pre code");
+        blocks.forEach((block: any) => {
+            hljs.highlightBlock(block);
+        });
     })
 }
 
@@ -43,6 +53,8 @@ onMounted(() => {
 </script>
 
 <style scoped>
+
+
 .card {
     margin-bottom: 20px;
     box-shadow: 0 0 10px #bdbdbd;
@@ -76,7 +88,7 @@ onMounted(() => {
             left: -20px;
             top: 19px;
             z-index: 1;
-            background-image: linear-gradient(to right,#e66465, #9198e5);
+            background-image: linear-gradient(to right, #e66465, #9198e5);
             width: 45%;
             height: 5px;
         }

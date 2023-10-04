@@ -234,15 +234,15 @@ const handleScroll = () => {
         .text {
             margin-left: 20px;
             text-align: left;
-            width: 85%;
+            width: 85%; 
             color: gray;
         }
     }
 
     .ava {
         margin: 0 auto;
-        height: 100px;
-        width: 100px;
+        height: 30%;
+        width: 27%;
 
         .avatar-box {
 
@@ -269,7 +269,7 @@ const handleScroll = () => {
     }
 
     .nickname {
-        margin-top: 30px;
+        margin-top: 3%;
         font-size: larger;
     }
 
@@ -280,7 +280,7 @@ const handleScroll = () => {
 
     .article-info {
         display: flex;
-        margin-top: 20px;
+        margin-top: 3%;
 
         .item {
             width: 33.3%;
